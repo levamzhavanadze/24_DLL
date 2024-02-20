@@ -8,19 +8,19 @@ using System.Threading.Tasks;
 
 namespace _24_DLL
 {
-    internal class Weapon
+    abstract class Weapon
     {
-        public int Power { get; set; }
-        public int Lethality { get; set; }
+        public abstract int Power { get; set; }
+        public abstract int Lethality { get; set; }
 
 
-        public Weapon()
-        {
-            Power = GenerateProperty();
-            Lethality = GenerateProperty();
-        }
+        //public Weapon()
+        //{
+        //    Power = GenerateProperty();
+        //    Lethality = GenerateProperty();
+        //}
 
-    
+
 
         public virtual int GenerateProperty()
         {

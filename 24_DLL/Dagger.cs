@@ -8,12 +8,27 @@ namespace _24_DLL
 {
     internal class Dagger : Weapon
     {
+        public override int Power { get; set; }
+        public override int Lethality { get; set; }
+
         //Type 1 = singleDagger. 2 = DualDagger
         public int DaggerType { get; set; }
 
         public Dagger()
         {
+
+           
+            Lethality = GenerateProperty();
             DaggerType = GenerateProperty();
+
+            if (DaggerType == 2) 
+            {
+            Power = GenerateProperty() * 2;
+            }
+            else
+            {
+                Power = GenerateProperty();
+            }
         }
 
         public override int GenerateProperty()

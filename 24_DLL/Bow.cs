@@ -8,12 +8,16 @@ namespace _24_DLL
 {
     internal class Bow : Weapon
     {
+        public override int Power { get; set; }
+        public override int Lethality { get; set; }
         public int Accuracy { get; set; }
         public int ArrowQuantity { get; set; }
 
 
         public Bow()
         {
+            Power = GenerateProperty();
+            Lethality = GenerateProperty();
             Accuracy = GenerateProperty();
             ArrowQuantity = GenerateProperty();
         }
