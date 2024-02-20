@@ -2,19 +2,6 @@
 using System.Numerics;
 using _24_DLL;
 
-//Bow bow = new Bow();
-
-//Console.WriteLine(bow);
-
-
-//Dagger dagger = new Dagger();
-
-//Console.WriteLine(dagger);
-
-//Gun gun = new Gun();
-//Console.WriteLine(gun);
-
-
 
 List<Weapon> weapons = new List<Weapon>()
 {
@@ -34,17 +21,19 @@ foreach (Weapon weapon in weapons)
 
 Console.WriteLine("---Top Powered Weapon---");
 
+//Selects top power form list
 var topPower = from p in weapons
                    //where p.Power.CompareTo(weapons[0].Power) == 0
                orderby p.Power descending
 
                select p;
 
+//filter list and store in variable to print.
 var result = from s in weapons
              where s.Power == topPower.First().Power
              select s;
 
-
+//Print top powered weapons
 foreach(var item in result)
 {
     Console.WriteLine(item);

@@ -21,7 +21,6 @@ namespace _24_DLL
         //}
 
 
-
         public virtual int GenerateProperty()
         {
             Random propertyRandomizer = new Random();
