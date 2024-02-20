@@ -10,7 +10,3 @@ Console.WriteLine(person);
 
 CalculatorBasic a = new CalculatorBasic();
 
-Console.WriteLine(a.Sum(1, 2));
-
-Console.WriteLine(a.Mult(1, 2));
-Console.WriteLine(a.Divide(1, 2));
