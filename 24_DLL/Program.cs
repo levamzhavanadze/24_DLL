@@ -10,3 +10,5 @@ Console.WriteLine(person);
 
 CalculatorBasic a = new CalculatorBasic();
 
+
+a.Divide(1,2);
