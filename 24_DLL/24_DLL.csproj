@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>_24_DLL</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="24_DLL3">
+      <HintPath>..\..\24_DLL3\24_DLL3\bin\Release\net8.0\24_DLL3.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
